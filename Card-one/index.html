@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container-card">
+        <div class="container-img">
+            <img id="img-principal" src="img/rosas rojas.jpg" alt="">
+        </div>
+        <div class="container-content">
+            <h1>Rosas</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur fugit recusandae, iusto eaque
+                praesentium illum asperiores nostrum</p>
+            <div class="number-input-container">
+                <button class="decrement-btn">-</button>
+                <input type="number" class="custom-input" max="31" min="1" value="1" step="1" disabled>
+                <button class="increment-btn">+</button>
+            </div>
+            <div class="container-buttons">
+                <button onclick="Cambiar_IMG('img/rosas rojas.jpg')"><img src="img/rosas rojas.jpg" alt=""></button>
+                <button onclick="Cambiar_IMG('img/rosa blanca.jpg')"><img src="img/rosa blanca.jpg" alt=""></button>
+                <button onclick="Cambiar_IMG('img/rosa rosa.jpg')"><img src="img/rosa rosa.jpg" alt=""></button>
+            </div>
+            <button class="flex-button"> <ion-icon class="icon" name="cart-outline"></ion-icon>COMPRAR</button>
+        </div>
+    </div>
+</body>
+<script src="script/animation.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>

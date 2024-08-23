@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: white;
+  --background: black;
+}
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+body,
+.container-card,
+.container-buttons,
+.flex-button,
+.number-input-container {
+  display: flex;
+}
+
+body,
+.flex-button,
+.number-input-container {
+  justify-content: center;
+  align-items: center;
+}
+.container-card {
+  width: auto;
+  height: 400px;
+  flex-wrap: wrap;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.393);
+}
+.container-img {
+  width: 300px;
+  height: 400px;
+}
+.container-img > img {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: opacity 0.5s ease;
+}
+.container-content {
+  width: 300px;
+  height: 400px;
+  padding: 20px;
+  position: relative;
+}
+.container-content > h1 {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 30px;
+}
+.container-content > p {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.container-buttons {
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+}
+.container-buttons > button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 0;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+button > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.icon {
+  font-size: 20px;
+  color: var(--background-color);
+}
+.container-content > button {
+  width: 90%;
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  padding: 13px;
+  background-color: var(--background);
+  color: var(--background-color);
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.flex-button {
+  gap: 5px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+button > img:hover {
+  filter: grayscale(0.4);
+  transition: filter 0.5s ease;
+}
+.number-input-container {
+  width: 100%;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.decrement-btn,
+.increment-btn,
+.custom-input {
+  padding: 10px;
+}
+.decrement-btn,
+.increment-btn {
+  background-color: var(--background);
+  color: var(--background-color);
+  outline: none;
+  border: none;
+}
+
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .container-card {
+    height: auto;
+    width: 400px;
+  }
+  .container-img{
+    width: 100%;
+    height: 300px;
+  }
+  .container-content{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .container-card {
+    height: auto;
+    width: 300px;
+  }
+  .container-img{
+    width: 100%;
+    height: 200px;
+  }
+  .container-content{
+    width: 100%;
+  }
+}
