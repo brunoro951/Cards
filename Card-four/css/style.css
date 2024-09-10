@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  width: 700px;
+  height: 400px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.407);
+  position: relative;
+  z-index: -1;
+  display: flex;
+}
+
+.container-content {
+  width: 70%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.img-perro {
+  position: absolute;
+  z-index: 1;
+  width: 70%;
+  right: -150px;
+}
+
+h2,
+p {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  width: 350px;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 0.8rem;
+}
+
+h2::before {
+  content: "";
+  box-shadow: -10px 1px 1px 5px #e4c894;
+}
+
+.linea {
+  width: 100%;
+  height: 41px;
+  background-color: #d0ae6e;
+  position: absolute;
+  bottom: 0;
+}
+
+.img-pata {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  right: 200px;
+  top: 100px;
+  z-index: -2;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .container {
+    width: 500px;
+    height: 300px;
+    justify-content: left;
+  }
+
+  .img-perro {
+    right: -140px;
+  }
+
+  .container-content {
+    width: 70%;
+    height: 300px;
+  }
+
+  h2,
+  p {
+    width: 250px;
+  }
+
+  p {
+    font-size: 0.5rem;
+  }
+
+  .img-pata {
+    width: 60px;
+    height: 60px;
+    right: 100px;
+    top: 100px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .container {
+    width: 300px;
+    height: 200px;
+  }
+
+  .img-perro {
+    right: -90px;
+    bottom: -35px;
+  }
+
+  .container-content {
+    width: 70%;
+    height: 200px;
+  }
+
+  h2,
+  p {
+    width: 80%;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.53rem;
+  }
+
+  .img-pata {
+    width: 50px;
+    height: 50px;
+    right: 50px;
+    top: 50px;
+  }
+
+  h2::before {
+    content: "";
+    box-shadow: -10px 1px 1px 3px #e4c894;
+  }
+
+  .linea {
+    height: 20px;
+  }
+}
